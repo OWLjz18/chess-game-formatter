@@ -1,0 +1,32 @@
+{
+  "name": "chess-game-formatter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "code": "node src/index.js",
+    "docs": "jsdoc -c jsdoc.json",
+    "test": "node --test ./test",
+    "linter": "eslint './**/*.js'",
+    "docs:watch": "nodemon --ignore 'docs' --exec pnpm run docs",
+    "test:watch": "nodemon --exec pnpm test",
+    "linter:watch": "nodemon --exec pnpm linter"
+  },
+  "keywords": [],
+  "author": "OWLjz18 <owl.jz18@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "ascii-table": "0.0.9",
+    "dotenv": "16.0.3",
+    "telegraf": "4.10.0"
+  },
+  "devDependencies": {
+    "docdash": "1.2.0",
+    "eslint": "8.25.0",
+    "eslint-config-airbnb-base": "15.0.0",
+    "eslint-plugin-import": "2.26.0",
+    "jsdoc": "3.6.11",
+    "nodemon": "2.0.20"
+  }
+}

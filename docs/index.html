@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="utf-8">
+    <title>Home - Documentation</title>
+    
+    
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc.css">
+    <script src="scripts/nav.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav >
+    
+    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="BotHandlers.html">BotHandlers</a><ul class='methods'><li data-type='method'><a href="BotHandlers.html#.donate">donate</a></li><li data-type='method'><a href="BotHandlers.html#.example">example</a></li><li data-type='method'><a href="BotHandlers.html#.getResponse">getResponse</a></li><li data-type='method'><a href="BotHandlers.html#.help">help</a></li><li data-type='method'><a href="BotHandlers.html#.onText">onText</a></li><li data-type='method'><a href="BotHandlers.html#.replyBye">replyBye</a></li><li data-type='method'><a href="BotHandlers.html#.replyHello">replyHello</a></li><li data-type='method'><a href="BotHandlers.html#.replyToAThankYou">replyToAThankYou</a></li><li data-type='method'><a href="BotHandlers.html#.start">start</a></li></ul></li></ul><h3>Modules</h3><ul><li><a href="module-formatter.html">formatter</a></li><li><a href="module-parser.html">parser</a></li><li><a href="module-types.html">types</a></li><li><a href="module-utils_capitalizeTheFirstLetter.html">utils/capitalizeTheFirstLetter</a></li><li><a href="module-utils_getRegexMatches.html">utils/getRegexMatches</a></li><li><a href="module-utils_test_clientMakeRequest.html">utils/test/clientMakeRequest</a></li></ul><h3>Events</h3><ul><li><a href="BotHandlers.html#event:bot-response">bot-response</a></li></ul>
+</nav>
+
+<div id="main">
+    
+
+    
+
+
+
+    
+
+
+    <section class="package">
+        <h3> </h3>		
+    </section>
+
+
+
+
+
+
+
+
+
+    
+
+
+
+    <section class="readme usertext">
+        <article><h1 align="center">Chess Game Formatter</h1>
+<div align="center">
+<p><a href=""><a href="https://github.com/OWLjz18/chess-game-formatter/actions/workflows/ci.yaml"><img src="https://github.com/OWLjz18/chess-game-formatter/actions/workflows/ci.yaml/badge.svg" alt="CI"></a></a></p>
+</div>
+<p>I am a <a href="https://telegram.org">Telegram</a> bot that will be happy to help you format your chess.com games</p>
+<p>But first, we must have a game to format, but what the heck will I do? 😹</p>
+<p>To obtain the data of a game, all you have to do is: <strong><em>Open said game, open the options and select where it says &quot;Share PGN&quot;</em></strong>. You send it to me and I can do my job.</p>
+<p>These data must have a format equal to this:</p>
+<pre class="prettyprint source lang-text"><code>[Event &quot;Dayrre vs. JAZA_18&quot;]
+[Site &quot;Chess.com&quot;]
+[Date &quot;2022-10-05&quot;]
+[White &quot;Dayrre&quot;]
+[Black &quot;JAZA_18&quot;]
+[Result &quot;0-1&quot;]
+[WhiteElo &quot;334&quot;]
+[BlackElo &quot;866&quot;]
+[TimeControl &quot;blitz&quot;]
+[Termination &quot;JAZA_18 won on time&quot;]
+1. e4 Nf6 2. d4 Nc6 3. Nf3 g6 4. Nc3 Bg7 5. Bb5 b6 6. Bg5 Bb7 7. Nd5 O-O 8. O-O
+Nxd5 9. Bxe7 Qxe7 10. Ng5 Qxg5 11. f4 Qd8 12. Bc4 Nf6 13. h4 Qe7 14. b3 Ng4 15.
+Be2 Bf6 16. Bxg4 Bc8 17. Bxd7 Bxd7 18. Qh5 Bxd4+ 0-1
+</code></pre>
+<p>Now once the data is obtained, you will have to start a conversation with me, click here <a href="t.me/chess_game_formatter">@chess_game_formatter</a> and send me the <strong>/start</strong> command.</p>
+<p>After you have already started a conversation with me, you can send me the data you previously obtained and I will be able to return it to you formatted, like the following:</p>
+<pre class="prettyprint source lang-text"><code>⬜ Dayrre (334) vs JAZA_18 (866) ⬛
+-----------------------------------
+
+⡇ 1  ⡇ e4   ⡇ Nf6   ⡇
+⡇ 2  ⡇ d4   ⡇ Nc6   ⡇
+⡇ 3  ⡇ Nf3  ⡇ g6    ⡇
+⡇ 4  ⡇ Nc3  ⡇ Bg7   ⡇
+⡇ 5  ⡇ Bb5  ⡇ b6    ⡇
+⡇ 6  ⡇ Bg5  ⡇ Bb7   ⡇
+⡇ 7  ⡇ Nd5  ⡇ O-O   ⡇
+⡇ 8  ⡇ O-O  ⡇ Nxd5  ⡇
+⡇ 9  ⡇ Bxe7 ⡇ Qxe7  ⡇
+⡇ 10 ⡇ Ng5  ⡇ Qxg5  ⡇
+⡇ 11 ⡇ f4   ⡇ Qd8   ⡇
+⡇ 12 ⡇ Bc4  ⡇ Nf6   ⡇
+⡇ 13 ⡇ h4   ⡇ Qe7   ⡇
+⡇ 14 ⡇ b3   ⡇ Ng4   ⡇
+⡇ 15 ⡇ Be2  ⡇ Bf6   ⡇
+⡇ 16 ⡇ Bxg4 ⡇ Bc8   ⡇
+⡇ 17 ⡇ Bxd7 ⡇ Bxd7  ⡇
+⡇ 18 ⡇ Qh5  ⡇ Bxd4+ ⡇
+
+Type: Blitz.
+Date: 2022-10-05.
+
+Result: 0-1.
+JAZA_18 won on time.
+</code></pre>
+<p><strong><em>Important:</em></strong> This project has nothing to do with the developers or the chess.com app.</p>
+<hr>
+<h3>Documentation 📚</h3>
+<p>You can read the documentation of all the code, clicking <a href="https://owljz18.github.io/chess-game-formatter">here</a>.</p>
+<hr>
+<h3>Author 🦉</h3>
+<ul>
+<li><em><strong>José Zambrano</strong></em> (<a href="https://github.com/OWLjz18">OWLjz18</a>) =&gt; Project Creator.
+<ul>
+<li>Email =&gt; <a href="mailto:owl.jz18@gmail.com">owl.jz18@gmail.com</a></li>
+<li>Instagram =&gt; <a href="https://instagram.com/owljz18">@owljz18</a></li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3>License 📃</h3>
+<p>This project is licensed under an <em>MIT</em> license, please visit the <a href="./LICENSE.md">LICENSE.md</a> file for more information about it.</p></article>
+    </section>
+
+
+
+
+
+
+    
+    
+</div>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.11</a> on Sat Oct 15 2022 10:41:31 GMT-0400 (Venezuela Time) using the <a href="https://github.com/clenemt/docdash">docdash</a> theme.
+</footer>
+
+<script>prettyPrint();</script>
+<script src="scripts/polyfill.js"></script>
+<script src="scripts/linenumber.js"></script>
+
+
+
+</body>
+</html>
