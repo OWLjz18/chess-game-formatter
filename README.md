@@ -8,7 +8,7 @@
 
 I am a [Telegram](https://telegram.org) bot that will be happy to help you format your chess.com games
 
-But first, we must have a game to format, but what the heck will I do? 😹
+But first, we must have a game to format, if not what will i do? 😹
 
 To obtain the data of a game, all you have to do is: **_Open said game, open the options and select where it says "Share PGN"_**. You send it to me and I can do my job.
 
