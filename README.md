@@ -2,7 +2,7 @@
 
 <div align="center">
 
-  <a href="">[![CI](https://github.com/OWLjz18/chess-game-formatter/actions/workflows/ci.yaml/badge.svg)](https://github.com/OWLjz18/chess-game-formatter/actions/workflows/ci.yaml)</a>
+  <a href="">[![CI](https://github.com/OWLjz18/chess-game-formatter/actions/workflows/ci.yml/badge.svg)](https://github.com/OWLjz18/chess-game-formatter/actions/workflows/ci.yml)</a>
 
 </div>
 
