@@ -30,7 +30,7 @@ Nxd5 9. Bxe7 Qxe7 10. Ng5 Qxg5 11. f4 Qd8 12. Bc4 Nf6 13. h4 Qe7 14. b3 Ng4 15.
 Be2 Bf6 16. Bxg4 Bc8 17. Bxd7 Bxd7 18. Qh5 Bxd4+ 0-1
 ```
 
-Now once the data is obtained, you will have to start a conversation with me, click here [@chess\_game\_formatter](t.me/chess_game_formatter) and send me the **/start** command.
+Now once the data is obtained, you will have to start a conversation with me, click here [@chess\_game\_formatter](https://t.me/chess_game_formatter) and send me the **/start** command.
 
 After you have already started a conversation with me, you can send me the data you previously obtained and I will be able to return it to you formatted, like the following:
 
