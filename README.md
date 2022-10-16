@@ -3,6 +3,7 @@
 <div align="center">
 
   <a href="">[![CI](https://github.com/OWLjz18/chess-game-formatter/actions/workflows/ci.yml/badge.svg)](https://github.com/OWLjz18/chess-game-formatter/actions/workflows/ci.yml)</a>
+  <a href="">![GitHub tag](https://img.shields.io/github/v/tag/OWLjz18/chess-game-formatter?color=blueviolet)</a>
 
 </div>
 
